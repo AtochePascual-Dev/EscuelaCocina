@@ -1,0 +1,22 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+.footer {
+  padding: 3rem 0 1.5rem;
+  border-bottom: 5px solid v.$primario;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include m.tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__copy {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
