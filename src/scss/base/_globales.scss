@@ -1,0 +1,32 @@
+@use "variables" as v;
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: v.$fuentePrincipal;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+[class="-container"] {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
